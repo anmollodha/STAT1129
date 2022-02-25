@@ -1,0 +1,71 @@
+#Question 1
+n=0
+while n<10:
+    print(n)
+    n+=1
+    if n==5:
+        break
+
+#Question 2
+n=0
+while n<5:
+    print(n)
+    n+=1
+else:
+    print(n,'is not less than 5')
+
+#Question 3
+fruitlist=['banana','orange','apple']
+for fruit in fruitlist:
+    if fruit == 'apple':
+        print(fruit,'is really a fruit?')
+    else:
+        print('I like',fruit)
+
+#Question 4
+n=31
+#initialize sum and counter
+sum=0
+i=1
+
+while i<n:
+    sum=sum+i
+    i=i+1 #update the counter
+
+#print the sum
+print('The sum is',sum)
+     
+#Question 5
+grade = 94
+if grade>=90:
+    print('A')
+elif grade>=80:
+    print('B')
+elif grade>=70:
+    print('C')
+elif grade>=60:
+    print('D')
+else:
+    print('F')
+
+#Question 6
+marks={'Andy':88,'Amy':66,'James':90,'Jules':55,'Arthur':77}
+for students in marks:
+    print(students,'=',marks[students])
+maximum=max(marks.values())
+print(maximum)
+minimum=min(marks.values())
+print(minimum)
+sum = 0
+for i in marks.values():
+    sum=sum+i
+average=sum/len(marks)
+print(average)
+for k in marks:
+    if "J" in k:
+        break
+    print(k)
+for k in marks:
+    if 'J' in k:
+        continue
+    print(k)
